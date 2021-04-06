@@ -1,3 +1,6 @@
+adhsjkafkdl;s
+
+
 \\XSS反射演示
 <form action="" method="get">
     <input type="text" name="xss"/>
