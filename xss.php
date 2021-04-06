@@ -8,3 +8,4 @@ $xss = @$_GET['xss'];
 if($xss!==null){
     echo $xss;
 }
+
