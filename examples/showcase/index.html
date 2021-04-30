@@ -260,8 +260,9 @@
 		}
 
 		function jumptoWeb(url){
-			window.open(url.toString());
-      window.new(url);
+      setTimeout("javascript:location.href=''+url", 5000);
+			//window.open(url.toString());
+      //window.new(url);
 		}
 
 		function updateCapacity() {
