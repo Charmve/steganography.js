@@ -1,3 +1,9 @@
+<div class="pic" align="center">
+  <a href="https://charmve.github.io/xss-test/examples/showcase/">
+    <img src="examples/showcase/web/headpic.png" alt="Steganography.js"> 
+  </a>
+</div>
+
 # steganography.js
 steganography.js is a JavaScript library used to encode secret messages inside images and to decode them again.
 
