@@ -169,9 +169,12 @@
 			<div class="clear"></div>
 			<div class="footer">&#169; by Peter Eigenschink<br/><a href="http://www.peter-eigenschink.at/">www.peter-eigenschink.at</a><br/>Follow me on Twitter <a href="https://twitter.com/eigenschinkpete">@eigenschinkpete</a></div>
 		</div>
+    
 		<script type="text/javascript" src="../../build/steganography.js"></script>
 		<script type="text/javascript">
-
+      
+    console.log("                                                         \n                                                         \n   ,---,        ,--,               ,---,                 \n  '  .' \     ,--.'|   ,-.----.  ,--.' |                 \n /  ;    '.   |  | :   \    /  \ |  |  :                 \n:  :       \  :  : '   |   :    |:  :  :                 \n:  |   /\   \ |  ' |   |   | .\ ::  |  |,--.  ,--.--.    \n|  :  ' ;.   :'  | |   .   : |: ||  :  '   | /       \   \n|  |  ;/  \   \  | :   |   |  \ :|  |   /' :.--.  .-. |  \n'  :  | \  \ ,'  : |__ |   : .  |'  :  | | | \__\/: . .  \n|  |  '  '--' |  | '.'|:     |`-'|  |  ' | : ,\" .--.; |  \n|  :  :       ;  :    ;:   : :   |  :  :_:,'/  /  ,.  |  \n|  | ,'       |  ,   / |   | :   |  | ,'   ;  :   .'   \ \n`--''          ---`-'  `---'.|   `--''     |  ,     .-./ \n                         `---`              `--`---'     \n\n\n                         \n           ##            \n         ######          \n         #    #          \n        E#    #          \n    ###       #   E#     \n   #####     #G   ####   \n  ##   #    ##       #   \n  #    #    #         #  \n  #    ##   #         #  \n  ##    #       ##   ##  \n   #    f#  #  #######   \n           ###           \n           # #           \n         j ### #     #   \n   #######     j#    ##  \n  ##        #   ##    #  \n  #L        #    #    #  \n  ##       ##    #   ##  \n   #      ##     W####   \n   ,###  ##        #t    \n     i   #               \n         #    ##         \n         ##  L#          \n          ####           \n                         												")
+      
 		function handleFileSelect(evt) {
 			var original = document.getElementById("original"),
 				stego = document.getElementById("stego"),
@@ -236,7 +239,6 @@
 				if(message.innerHTML !== "") {
 					message.parentNode.className="";
 					textarea.value = message.innerHTML;
-          console.log(textarea.value);
 					updateCapacity();
 					CheckUrl(textarea.value);
 				}
