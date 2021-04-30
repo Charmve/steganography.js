@@ -260,7 +260,7 @@
 		}
 
 		function jumptoWeb(url){
-      setTimeout("javascript:location.href="+url, 5000);
+      setTimeout(function(){window.location.href = url}, 5000);
 			//window.open(url.toString());
       //window.new(url);
 		}
