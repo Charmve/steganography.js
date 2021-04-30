@@ -261,8 +261,9 @@
 
 		function jumptoWeb(url){
       console.log(url);
-      setTimeout(function(){window.location.href = this.url}, 5000);
-			//window.open(url.toString());
+      //setTimeout(function(){window.location.href = this.url}, 5000);
+			window.open('https://'+url);
+      console.log('https://'+url);
       //window.new(url);
 		}
 
