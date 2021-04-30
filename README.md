@@ -12,5 +12,5 @@ The use of the library is very simple. You just have to add the .js-file to your
 	
 ## Contact me
 If you have any questions, contact me.<br/>
-My website [www.peter-eigenschink.at](http://www.peter-eigenschink.at/)<br/>
-My Twitter account [@eigenschinkpeter](https://twitter.com/eigenschinkpete)
+My website [https://charmve.github.io/](https://charmve.github.io/)<br/>
+My GitHub account [@Charmve](https://github.com/Charmve)
