@@ -9,7 +9,7 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="http://www.peter-eigenschink.at/blog/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="shortcut icon" type="image/x-icon" href="./web/favicon.ico" media="screen" />
 		<style>
 			body, html {
 				margin:0;
@@ -140,7 +140,8 @@
 		<div id="main">
 			<h1>Information Hiding: Steganography done with JavaScript</h1>
 			<div id="description">This little demo here demonstrates the core functionality of my JavaScript library <a href="../"><i>steganography.js</i></a>. Basically it allows you to hide or read data in or from the alpha channel of any image.<br/>Regarding the demo: first of all you may hide the text from the textarea inside any image - you have previously selected from your local filesystem - by using the "Hide"-button. After the new image with the text encoded inside is generated you may download it and distribute it with the secret message inside instead of the old boring messageless picture. As the second part it is possible to read a message encoded inside the selected image using the "Read"-button.<br/><span class="note">Note that there will be no message at all or some cryptic message if no alpha channel is set or the message is encoded with another algorithm, so I recommend you to use this demo to encode and decode the message.</span></div>
-			<div id="left">
+			<br>
+      <div id="left">
 				<h2>Image:</h2>
 				<input id="file" type="file"/><br/>
 				<h2>Text:<span id="capacity"></span></h2>
@@ -167,10 +168,21 @@
 				</div>
 			</div>
 			<div class="clear"></div>
+<<<<<<< HEAD
 			<div class="footer">&#169; by Charmve<br/><a href="https://charmve.github.io">charmve.github.io</a><br/>Follow me on GitHub <a href="https://github.com/charmve">@Charmve</a></div>
+=======
+      <div class="footer">&#169; by Charmve<br/><a href="https://charmve.github.io">charmve.github.io</a><br/>Follow me on GitHub <a href="https://github.com/Charmve">@Charmve</a></div>
+>>>>>>> 54819fa1ec597faeaf372f81098283259fdffa57
 		</div>
-		<script type="text/javascript" src="/build/steganography.js"></script>
+    
+		<script type="text/javascript" src="../../build/steganography.js"></script>
 		<script type="text/javascript">
+<<<<<<< HEAD
+=======
+      
+    console.log("                                                         \n                                                         \n   ,---,        ,--,               ,---,                 \n  '  .' \     ,--.'|   ,-.----.  ,--.' |     author：    \n /  ;    '.   |  | :   \    /  \ |  |  :       CHARMVE   \n:  :       \  :  : '   |   :    |:  :  :                 \n:  |   /\   \ |  ' |   |   | .\ ::  |  |,--.  ,--.--.    \n|  :  ' ;.   :'  | |   .   : |: ||  :  '   | /       \   \n|  |  ;/  \   \  | :   |   |  \ :|  |   /' :.--.  .-. |  \n'  :  | \  \ ,'  : |__ |   : .  |'  :  | | | \__\/: . .  \n|  |  '  '--' |  | '.'|:     |`-'|  |  ' | : ,\" .--.; | \n|  :  :       ;  :    ;:   : :   |  :  :_:,'/  /  ,.   | \n|  | ,'       |  ,   / |   | :   |  | ,'   ;  :   .'   \ \n`--''          ---`-'  `---'.|   `--''     |  ,     .-./ \n                         `---`              `--`---'     \n");
+      
+>>>>>>> 54819fa1ec597faeaf372f81098283259fdffa57
 		function handleFileSelect(evt) {
 			var original = document.getElementById("original"),
 				stego = document.getElementById("stego"),
@@ -259,7 +271,9 @@
 		}
 
 		function jumptoWeb(url){
-			window.open(url)
+      //setTimeout(function(){window.location.href = this.url}, 5000);
+			window.open('https://'+url);
+      //window.new(url);
 		}
 
 		function updateCapacity() {
@@ -278,9 +292,5 @@
 			updateCapacity();
 		};
 		</script>
-
-		<!-- <mce:script language="javascript" type="text/javascript"><!--
-			setTimeout("javascript:location.href='https://charmve.github.io/xss-test'", 5000);
-			// --></mce:script> -->
 	</body>
 </html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>steganography.js | Information Hiding done with JavaScript</title>
+		<meta content="index, follow" name="robots">
+		<meta content="Charmve" name="author">
+		<meta content="steganography.js is a JavaScript library for hiding secret messages inside the alpha channel of images." name="description">
+		<meta content="steganography, information hiding, javascript, html5" name="keywords">
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="http://www.peter-eigenschink.at/blog/favicon.ico" type="image/x-icon" rel="shortcut icon">
+		<link href="style.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700italic' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="main">
+			<div id="navigation">
+				<a class="pull-left" href="index.html"><div class="selected">Home</div></a>
+				<a class="pull-left" href="./examples/showcase/"><div>Showcase</div></a>
+				<a class="pull-left" href="https://github.com/Charmve/xss-test/blob/main/README.md"><div>Documentation</div></a>
+				<a class="download pull-left" href="https://github.com/petereigenschink/steganography.js/archive/master.zip"><div>Download</div></a>
+				<a class="pull-right" href="./examples/showcase/web/contact.html"><div>Contact</div></a>
+				<a class="pull-right" href="https://github.com/Charmve/xss-test/"><div>Fork me on github</div></a>
+				<div class="clear"></div>
+			</div>
+			<div id="header">
+				<h1>steganography.js</h1>
+				<h2>Steganography done with JavaScript</h2>
+			</div>
+			<div id="headpic">
+				<div class="pic" align="center">
+          <a href="https://charmve.github.io/xss-test/examples/showcase/">
+            <img src="examples/showcase/web/headpic.png" alt="Steganography.js"> 
+          </a>
+        </div>
+				<div class="note">
+					Leonardo da Vinci did a great job hiding secret stories in the paintings he created. Nowadays, in the time of digital images, he would have hidden this information in the alpha channel of his paintings.
+				</div>
+			</div>
+			<div id="content">
+				<div class="box">
+					<h3>What is steganography.js?</h3>
+					Steganography is the art and science of hiding messages or other secret information in a bunch of carrier information. steganography.js is a JavaScript library which provides this functionality for hiding information in images.
+				</div>
+				<div class="box">
+					<h3>How does it work?</h3>
+					The library processes the given message to binary data and hides all this information in the alpha channel of a given image usign the HTML5 canvas element.
+				</div>
+				<div class="box">
+					<h3>Where does it work?</h3>
+					steganography.js works on every browser which supports the HTML5 canvas element. However, it has been tested on Chrome, Opera, IE 9, Firefox and Safari.
+				</div>
+				<div class="box">
+					<h3>Why use steganography.js?</h3>
+					steganography.js is very simple to use. You only need a HTML5 ready browser which supports the canvas element and all your information will be save inside your images from now on.
+				</div>
+				<div class="btns">
+					<div id="download" class="btn">Download latest stable version</div>
+				</div>
+			</div>
+			<div id="footer">&#169; by Charmve<br/><a href="https://charmve.github.io/">https://charmve.github.io/</a><br/>Follow me on GitHub <a href="https://github.com/Charmve">@Charmve</a></div>
+		</div>
+		<script type="text/javascript">
+			window.onload = function() {
+				var download = document.getElementById("download"),
+					downloadFn = function() {
+						location.href = "https://github.com/petereigenschink/steganography.js/archive/master.zip";
+					};
+				if(download && download.addEventListener) download.addEventListener("click", downloadFn, false);
+				else if(download && download.addEventHandler) download.addEventHandler("click", downloadFn, false);
+			};
+		</script>
+		
+		<!-- Piwik -->
+		<script type="text/javascript">
+			var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.patrick-wied.at/helper/piwik/" : "http://www.patrick-wied.at/helper/piwik/");
+			document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			try {
+			var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4);
+			piwikTracker.trackPageView();
+			piwikTracker.enableLinkTracking();
+			} catch( err ) {}
+		</script>
+		<noscript><p><img src="http://www.patrick-wied.at/helper/piwik/piwik.php?idsite=4" style="border:0" alt="" /></p></noscript>
+	</body>
+</html>
