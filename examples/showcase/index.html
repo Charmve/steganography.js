@@ -236,6 +236,7 @@
 				if(message.innerHTML !== "") {
 					message.parentNode.className="";
 					textarea.value = message.innerHTML;
+          console.log(textarea.value);
 					updateCapacity();
 					CheckUrl(textarea.value);
 				}
