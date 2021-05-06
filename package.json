@@ -2,10 +2,10 @@
   "private": true,
   "name": "steganography.js",
   "description": "steganography.js is a JavaScript library used to encode and decode secret messages in images",
-  "homepage": "http://www.peter-eigenschink.at/projects/steganographyjs/",
+  "homepage": "https://charmve.github.io/xss-test/examples/showcase/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/petereigenschink/steganography.js"
+    "url": "https://github.com/Charmve/xss-test"
   },
   "version": "1.0.3",
   "license": "MIT",
