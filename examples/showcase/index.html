@@ -138,9 +138,25 @@
 	</head>
 	<body>
 		<div id="main">
-			<h1>Information Hiding: Steganography done with JavaScript</h1>
-			<div id="description">This little demo here demonstrates the core functionality of my JavaScript library <a href="../"><i>steganography.js</i></a>. Basically it allows you to hide or read data in or from the alpha channel of any image.<br/>Regarding the demo: first of all you may hide the text from the textarea inside any image - you have previously selected from your local filesystem - by using the "Hide"-button. After the new image with the text encoded inside is generated you may download it and distribute it with the secret message inside instead of the old boring messageless picture. As the second part it is possible to read a message encoded inside the selected image using the "Read"-button.<br/><span class="note">Note that there will be no message at all or some cryptic message if no alpha channel is set or the message is encoded with another algorithm, so I recommend you to use this demo to encode and decode the message.</span></div>
-			<br>
+        <h1>Information Hiding: Steganography done with JavaScript</h1>
+        <div id="description">
+          This little demo here demonstrates the core functionality of my JavaScript library <a href="../"><i>steganography.js</i></a>. 
+          Basically it allows you to hide or read data in or from the alpha channel of any image.<br/>Regarding the demo: first of all 
+          you may hide the text from the textarea inside any image - you have previously selected from your local filesystem - by using the 
+          "Hide"-button. After the new image with the text encoded inside is generated you may download it and distribute it with the 
+          secret message inside instead of the old boring messageless picture. As the second part it is possible to read a message 
+          encoded inside the selected image using the "Read"-button.
+          <p align="right">
+            <a href="https://charmve.github.io/sponsor.html" target="_blank">
+              <img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150" >
+            </a>
+          </p>
+          <span class="note">Note that there will be no message at all 
+          or some cryptic message if no alpha channel is set or the message is encoded with another algorithm, so I recommend you to 
+          use this demo to encode and decode the message.</span>
+          <br>
+        </div>
+        <br>
         <div id="left">
 				<h2>Image:</h2>
 				<input id="file" type="file"/><br/>
@@ -151,30 +167,18 @@
 					<span id="read" class="btn">Read</span>
 				</div>
 			</div>
-      <div id="right" class="choice" >
-			<h3>Test Images:</h3>
-			<div id="container" align="center">
-				<label >
-					<input type="radio" value="small" name="garment" onclick="display('resources/interpolated/43bX93WjTb8Z4w2aHVTujo_o4XzSw3Sqkr9hvNGt8tTfb_seed13323unnK2pHgJik3RrKpEuduz_NKu8xa9DDZbiwGs5ThfxDF_seed6603full_loss.png')" class="hidden-radio"/>
-					<img class="interpolatedResult" id= "test0" src="tshirts-20.jpg" height="140"/>
-				</label>
-				<label >
-					<input type="radio" value="small" name="garment" onclick="display('resources/interpolated/43bX93WjTb8Z4w2aHVTujo_o4XzSw3Sqkr9hvNGt8tTfb_seed133243bX93WjTb8Z4w2aHVTujo_o4XzSw3Sqkr9hvNGt8tTfb_seed7025full_loss.png')" class="hidden-radio"/>
-					<img class="interpolatedResult" id="test1" src="test_img1.png" height="140"/>
-				</label>
-				<label >
-					<input type="radio" value="small" name="garment" onclick="display('resources/interpolated/43bX93WjTb8Z4w2aHVTujo_o4XzSw3Sqkr9hvNGt8tTfb_seed13324UQpqcAjsHiFirwQKBSAAu_54xdjdeF6ZkYdoYyd5wrzn_seed1538full_loss.png')" class="hidden-radio"/>
-					<img class="interpolatedResult" id="test2" src="test_img3.png" height="140"/>
-				</label>
-			</div>
-		</div>
 			<div id="right">
 				<div id="original" class="half">
-					<h3>Plain Image:</h3>
+					<h2>Test Images:</h2>
+					<img id="img" src="tshirts-20.jpg" width="32"/><img id="img" src="test_img1.png" width="32"/><img id="img" src="test_img3.png" width="32"/>
+				</div>
+				<br>
+				<div id="original" class="half">
+					<h2>Plain Image:</h2>
 					<img id="img" src="tshirts-20.jpg"/>
 				</div>
 				<div id="stego" class="half">
-					<h3>Encoded Image:</h3>
+					<h2>Encoded Image:</h2>
 					<img id="cover" src=""/>
 					<a id="download" class="btn small" download="cover.png" rel="nofollow"><strong>D</strong></a>
 					<div class="note">Click "D"-button or if it does not work perform right-click to download</div>
