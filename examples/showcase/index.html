@@ -151,18 +151,30 @@
 					<span id="read" class="btn">Read</span>
 				</div>
 			</div>
+      <div id="right" class="choice" >
+			<h3>Test Images:</h3>
+			<div id="container" align="center">
+				<label >
+					<input type="radio" value="small" name="garment" onclick="display('resources/interpolated/43bX93WjTb8Z4w2aHVTujo_o4XzSw3Sqkr9hvNGt8tTfb_seed13323unnK2pHgJik3RrKpEuduz_NKu8xa9DDZbiwGs5ThfxDF_seed6603full_loss.png')" class="hidden-radio"/>
+					<img class="interpolatedResult" id= "test0" src="tshirts-20.jpg" height="140"/>
+				</label>
+				<label >
+					<input type="radio" value="small" name="garment" onclick="display('resources/interpolated/43bX93WjTb8Z4w2aHVTujo_o4XzSw3Sqkr9hvNGt8tTfb_seed133243bX93WjTb8Z4w2aHVTujo_o4XzSw3Sqkr9hvNGt8tTfb_seed7025full_loss.png')" class="hidden-radio"/>
+					<img class="interpolatedResult" id="test1" src="test_img1.png" height="140"/>
+				</label>
+				<label >
+					<input type="radio" value="small" name="garment" onclick="display('resources/interpolated/43bX93WjTb8Z4w2aHVTujo_o4XzSw3Sqkr9hvNGt8tTfb_seed13324UQpqcAjsHiFirwQKBSAAu_54xdjdeF6ZkYdoYyd5wrzn_seed1538full_loss.png')" class="hidden-radio"/>
+					<img class="interpolatedResult" id="test2" src="test_img3.png" height="140"/>
+				</label>
+			</div>
+		</div>
 			<div id="right">
 				<div id="original" class="half">
-					<h2>Test Images:</h2>
-					<img id="img" src="tshirts-20.jpg" width="32"/><img id="img" src="test_img1.png" width="32"/><img id="img" src="test_img3.png" width="32"/>
-				</div>
-				<br>
-				<div id="original" class="half">
-					<h2>Plain Image:</h2>
+					<h3>Plain Image:</h3>
 					<img id="img" src="tshirts-20.jpg"/>
 				</div>
 				<div id="stego" class="half">
-					<h2>Encoded Image:</h2>
+					<h3>Encoded Image:</h3>
 					<img id="cover" src=""/>
 					<a id="download" class="btn small" download="cover.png" rel="nofollow"><strong>D</strong></a>
 					<div class="note">Click "D"-button or if it does not work perform right-click to download</div>
