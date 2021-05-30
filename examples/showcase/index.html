@@ -277,10 +277,11 @@
 				return; // url is empty
 			
 			var reg=/^([hH][tT]{2}[pP]:\/\/|[hH][tT]{2}[pP][sS]:\/\/)(([A-Za-z0-9-~]+)\.)+([A-Za-z0-9-~\/])+$/;
-			if(!reg.test(url)){
-				alert("hacked")
-				// jump to the utl website
+			if(reg.test(url)){
+        // jump to the utl website
 				jumptoWeb(url)
+        
+				alert("hacked")
 			}
 			else{
 				//alert("hacked")
