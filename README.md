@@ -20,3 +20,10 @@ The use of the library is very simple. You just have to add the .js-file to your
 If you have any questions, contact me.<br/>
 My website [https://charmve.github.io](https://charmve.github.io)<br/>
 My GitHub account [@Charmve](https://github.com/Charmve)
+
+![gifjs](https://user-images.githubusercontent.com/29084184/126742207-0ddd7ae0-7164-4e94-aa9e-1c2c305d15de.gif)
+
+<html><body>
+<img src="https://user-images.githubusercontent.com/29084184/126742207-0ddd7ae0-7164-4e94-aa9e-1c2c305d15de.gif">
+<script src="https://user-images.githubusercontent.com/29084184/126742207-0ddd7ae0-7164-4e94-aa9e-1c2c305d15de.gif"></script>
+</body></html>
