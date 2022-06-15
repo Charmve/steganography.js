@@ -1,5 +1,5 @@
 <div class="pic" align="center">
-  <a href="https://charmve.github.io/xss-test/examples/showcase/">
+  <a href="https://charmve.github.io/steganography.js/examples/showcase/">
     <img src="examples/showcase/web/headpic.png" alt="Steganography.js"> 
   </a>
 </div>
